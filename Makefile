@@ -13,4 +13,4 @@ static:
 	gcc $(MAINS) $(LIB) -o static_test
 
 clean:
-	rm matrix_test
+	rm -f dynamic_test static_test
