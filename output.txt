@@ -1,0 +1,57 @@
+veloraxzia@Tenebris:~/ECE330/ECE330HW2SonnyJi$ make
+gcc test_dynamic.c matrix_dynamic.c -lm -o dynamic_test
+matrix_dynamic.c: In function ‘destroy’:
+matrix_dynamic.c:57:2: warning: attempt to free a non-heap object ‘m’ [-Wfree-nonheap-object]
+  free(&m);
+  ^~~~~~~~
+gcc test_static.c matrix_static.c -lm -o static_test
+veloraxzia@Tenebris:~/ECE330/ECE330HW2SonnyJi$ ./static_test
+
+ Matrix a:
+
+   1.000   2.000
+   3.000   4.000
+
+ Matrix b:
+
+   1.000   2.000
+   3.000   4.000
+
+ a+b:
+
+   2.000   4.000
+   6.000   8.000
+
+ Transpose of a and b:
+
+   1.000   3.000
+   2.000   4.000
+
+
+   1.000   3.000
+   2.000   4.000
+veloraxzia@Tenebris:~/ECE330/ECE330HW2SonnyJi$ ./dynamic_test
+
+ Matrix a:
+
+   1.000   2.000
+   3.000   4.000
+
+ Matrix b:
+
+   1.000   2.000
+   3.000   4.000
+
+ a+b:
+
+   2.000   4.000
+   6.000   8.000
+
+ Transpose of a and b:
+
+   1.000   3.000
+   2.000   4.000
+
+
+   1.000   3.000
+   2.000   4.000
