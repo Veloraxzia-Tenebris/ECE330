@@ -11,8 +11,8 @@
 typedef double T;
 
 typedef struct {
-  int  row_dim, col_dim;
-  T element[MAX_ROW][MAX_COL];
+	int  row_dim, col_dim;
+	T element[MAX_ROW][MAX_COL];
 } matrix;
 
 /* function prototypes */
@@ -30,5 +30,5 @@ matrix negate(matrix);
 matrix multiply(matrix, matrix);
 matrix scalar_multiply(T scalar, matrix);
 /* remaining function prototypes not shown */
-
+matrix transpose(matrix)
 #endif

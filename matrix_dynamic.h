@@ -9,8 +9,8 @@
 typedef double T;
 
 typedef struct {
-  int  row_dim, col_dim;
-  T** element;
+	int  row_dim, col_dim;
+	T** element;
 } matrix;
 
 /* function prototypes */
