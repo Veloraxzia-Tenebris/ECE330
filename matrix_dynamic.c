@@ -149,3 +149,14 @@ void equate(matrix* m1, matrix* m2)
 			m2->element[i][j] = m1->element[i][j];
 }
 
+matrix transpose(matrix m)
+{
+	matrix out;
+	out = create_empty(m.col_dim, m.row_dim);
+	for(int i = 0; i < m.row_dim; i++)
+	{
+		for(int j = 0; j < m.col_dim; j++)
+			out.element[j][i] = m.element[i][j];
+	}
+	return out;
+}
