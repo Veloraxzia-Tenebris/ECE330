@@ -11,11 +11,11 @@ class HeartRates {
 	int getDay();
 	int getYear();
 	int getAge();
-	void setFirstName(std::string temp);
-	void setLastName(std::string temp);
-	void setMonth(int temp);
-	void setDay(int temp);
-	void setYear(int temp);
+	void setFirstName(std::string);
+	void setLastName(std::string);
+	void setMonth(int);
+	void setDay(int);
+	void setYear(int);
 	int setAge();
 	int getMaximumHeartRate();
 	int getTargetHeartRate();
