@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <heartrates.h>
 using namespace std;
 
