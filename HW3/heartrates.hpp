@@ -1,4 +1,4 @@
-#include <string>
+#include <string
 
 class HeartRates {
 	private:
