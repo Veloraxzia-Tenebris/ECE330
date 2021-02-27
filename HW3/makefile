@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -I. -lm
-DEPS = heartrates.h
+DEPS = heartrates.hpp
 OBJ = main.o heartrates.o 
 
 %.o: %.cpp $(DEPS)
