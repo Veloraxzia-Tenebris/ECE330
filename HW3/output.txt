@@ -1,0 +1,23 @@
+Please enter your first name: 
+first
+Please enter your last name: 
+last
+Please enter the your date of birth in the format MM/DD/YYYY
+Month:
+02
+Day:
+27
+Year:
+2000
+Please enter the current date in the format MM/DD/YYYY
+Month:
+02
+Day:
+26
+Year:
+2021
+Name: first last
+Date of Birth: 2/27/2000
+Age: 22
+Maximum Heart Rate: 198
+Target Heart Rate: 99
