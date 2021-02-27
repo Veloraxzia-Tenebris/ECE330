@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -I. -lm
 DEPS = heartrates.hpp
-OBJ = main.o heartrates.o 
+OBJ = main.o heartrates.o
 
 %.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
