@@ -23,10 +23,10 @@ int main() {
 	cout << "Year: " << endl;
 	cin >> itemp;
 	hr.setYear(itemp);
-	itemp = hr.getAge();
+	hr.setAge();
 	cout << "Name: " << hr.getFirstName() << " " << hr.getLastName() << endl;
 	cout << "Date of Birth: " << hr.getMonth() << "/" << hr.getDay() << "/" << hr.getYear() << endl;
-	cout << "Age: " << itemp << endl;
+	cout << "Age: " << hr.getAge() << endl;
 	cout << "Maximum Heart Rate: " << hr.getMaximumHeartRate() << endl;
 	cout << "Target Heart Rate: " << hr.getTargetHeartRate() << endl;
 	return 0;
