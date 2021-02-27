@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <heartrates.h>
+#include <heartrates.hpp>
 using namespace std;
 
 int main() {
