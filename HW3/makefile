@@ -3,7 +3,7 @@ CFLAGS = -I. -lm
 DEPS = heartrates.h
 OBJ = main.o heartrates.o 
 
-%.o: %.c $(DEPS)
+%.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 hellomake: $(OBJ)
