@@ -1,4 +1,4 @@
-CC = gcc
+CC = g++
 CFLAGS = -lm -I.
 DEPS = heartrates.hpp
 OBJ = main.o heartrates.o
