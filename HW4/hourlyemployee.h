@@ -6,18 +6,18 @@ using namespace std;
 
 class HourlyEmployee : public Employee {
 	public:
-		HourlyEmployee(long = 0, const string & = "" , const string & = "", const string & = "", int = 0, int = 0, float = 0, float = 0);
-		void setHours(const int);
+		HourlyEmployee(long = 0, const string & = "" , const string & = "", const string & = "", int = 0, float = 0, float = 0, float = 0);
+		void setHours(const float);
 		void setRate(const float);
 		void setOvertime(const float);
-		int getHours() const;
+		float getHours() const;
 		float getRate() const;
 		float getOvertime() const;
 		float salaryCalc();
 		void printEmployee();
 	private:
-		int hoursWorked;
+		float hoursWorked;
 		float hourlyRate;
-		float overtimeHours;
+		int overtimeHours;
 };
 #endif
