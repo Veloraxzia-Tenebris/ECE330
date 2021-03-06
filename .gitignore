@@ -33,3 +33,4 @@
 
 # Settings
 *.json
+.vscode/settings.json
