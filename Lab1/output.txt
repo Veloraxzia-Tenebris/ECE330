@@ -112,8 +112,8 @@ getline() is a function while cin is an object. getline can only create strings 
 
 > > > Difference of Public and Private Object Members 1
 
-PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> g++ circle.cpp -o cirlce 
-PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> ./cirlce 
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> g++ circle1.cpp -o cirlce1 
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> ./cirlce1
 Radius is:5.5
 Area is:94.985
 
