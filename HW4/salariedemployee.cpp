@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <exception>
 #include "salariedemployee.h"
 using namespace std;
 
