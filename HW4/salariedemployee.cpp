@@ -27,7 +27,9 @@ float SalariedEmployee::salaryCalc() {
 }
 void SalariedEmployee::printEmployee() {
 	Employee::printEmployee();
-	cout << "Fraction of Time Worked: " << fixed << setprecision(2) << getWorked() << endl;
+	cout << resetiosflags(ios::showbase) << fixed << setprecision(2);
+	cout << "Fraction of Time Worked: " << getWorked() << endl;
 	cout << "Monthly Salary: $" << getSalary() << endl;
 	cout << "Salary: $" << salaryCalc() << endl;
+	cout << resetiosflags(ios::showbase);
 }

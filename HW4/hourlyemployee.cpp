@@ -4,12 +4,12 @@
 #include "hourlyemployee.h"
 using namespace std;
 
-HourlyEmployee::HourlyEmployee(long id, const string &last, const string &first, const string &initial, int dept, int hours, float rate, float overtime) : Employee(id, last, first, initial, dept) {
+HourlyEmployee::HourlyEmployee(long id, const string &last, const string &first, const string &initial, int dept, float hours, float rate, float overtime) : Employee(id, last, first, initial, dept) {
 	setHours(hours);
 	setRate(rate);
 	setOvertime(overtime);
 }
-void HourlyEmployee::setHours(const int hours) {
+void HourlyEmployee::setHours(const float hours) {
 	if(hours >= 0)
 		hoursWorked = hours;
 	else
@@ -27,7 +27,7 @@ void HourlyEmployee::setOvertime(const float overtime) {
 	else
 		throw invalid_argument("Overtime cannot be negative");
 }
-int HourlyEmployee::getHours() const {
+float HourlyEmployee::getHours() const {
 	return hoursWorked;
 }
 float HourlyEmployee::getRate() const {
@@ -44,8 +44,10 @@ float HourlyEmployee::salaryCalc() {
 }
 void HourlyEmployee::printEmployee() {
 	Employee::printEmployee();
+	cout << resetiosflags(ios::showbase) << fixed << setprecision(2);
 	cout << "Normal Hours Worked: " << getHours() << endl;
-	cout << "Hourly Rate: " << getRate() << endl;
+	cout << "Hourly Rate: $" << getRate() << endl;
 	cout << "Overtime Hours: " << getOvertime() << endl;
-	cout << "Total Salary: $" << fixed << setprecision(2) << salaryCalc() << endl;
+	cout << "Total Salary: $" << salaryCalc() << endl;
+	cout << resetiosflags(ios::showbase);
 }
