@@ -85,8 +85,8 @@ PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> ./myclass.exe
 Foo
 Foo
 
-Since ccc isn't a constant, the constant output was not print.
-
-
+1) Since ccc isn't a constant, the constant output was not print.
+2) A constant member function is a function that shouldn't change any variable of the object. These functions are called by default whenever using a constant object. You can also call constant functions from non-constant objects by either calling the function or casting the object to a constant.
+3) You can remove "std::" by adding "using namespace std;" on line 2.
 
 > > > Example 2 Part 2
