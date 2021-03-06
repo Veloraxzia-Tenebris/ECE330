@@ -121,3 +121,11 @@ Area is:94.985
 
 > > > Difference of Public and Private Object Members 2
 
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> g++ circle2.cpp -o cirlce2
+circle2.cpp: In function 'int main()':
+circle2.cpp:15:6: error: 'double Circle::radius' is private within this context
+  obj.radius = 1.5;
+      ^~~~~~
+circle2.cpp:6:10: note: declared private here
+   double radius;
+          ^~~~~~
