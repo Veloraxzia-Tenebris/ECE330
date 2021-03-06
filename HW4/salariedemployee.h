@@ -1,5 +1,6 @@
 #ifndef SALARIEDEMPLOYEE_H
 #define SALARIEDEMPLOYEE_H
+#include <string>
 #include "employee.h"
 using namespace std;
 

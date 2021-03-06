@@ -1,5 +1,6 @@
 #ifndef HOURLYEMPLOYEE_H
 #define HOURLYEMPLOYEE_H
+#include <string>
 #include "employee.h"
 using namespace std;
 
