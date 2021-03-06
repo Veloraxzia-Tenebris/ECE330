@@ -1,0 +1,57 @@
+> > > My First Pointer Example
+
+The output should be "first value is 10" and "second value is 20".
+Pointers store the memory address of a variable. A dereferenced pointer is the value at the memory address that the pointer points to.
+
+PS C:\Users\Tenebris\OneDrive\ECE330\PointersInC++> ./myFirstPointer.exe
+firstvalue is 10
+secondvalue is 20
+
+
+
+> > > Declaring Variables of Pointer Types - More Pointers Example
+
+PS C:\Users\Tenebris\OneDrive\ECE330\PointersInC++> ./morePointers.exe
+firstvalue is 10
+secondvalue is 20
+
+
+
+> > > Pointers & Arrays Example
+
+PS C:\Users\Tenebris\OneDrive\ECE330\PointersInC++> ./morePointers.exe
+10, 20, 30, 40, 50, 
+
+
+
+> > > Pointer Arithmetic Example 1
+
+PS C:\Users\Tenebris\OneDrive\ECE330\PointersInC++> ./morePointers.exe
+p=
+shahnaz=h
+q=
+
+
+
+> > > Pointer Arithmetic Example 2
+
+PS C:\Users\Tenebris\OneDrive\ECE330\PointersInC++> ./morePointers.exe
+i=12
+j=11
+k=11
+
+
+
+> > > Void Pointers Example
+
+PS C:\Users\Tenebris\OneDrive\ECE330\PointersInC++> ./morePointers.exe
+y, 1603
+
+
+
+> > > Pointers to Functions Example
+
+PS C:\Users\Tenebris\OneDrive\ECE330\PointersInC++> ./morePointers.exe
+8
+
+And m should be 12
