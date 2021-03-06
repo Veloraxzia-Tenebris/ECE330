@@ -1,0 +1,92 @@
+> > > Example 1
+
+PS C:\Users\Tenebris\OneDrive\ECE330> cd Lab1
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> g++ hello.cpp -o hello
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> ls
+
+
+    Directory: C:\Users\Tenebris\OneDrive\ECE330\Lab1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         3/5/2021     23:06            116 hello.cpp
+-a----         3/5/2021     23:07          45496 hello.exe
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> ./hello.exe
+Hello World!
+Wasn't that easy?
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> cat hello.cpp 
+#include <iostream>
+using std::cout;
+
+int main()
+{
+        cout << "Hello World!\nWasn't that easy?\n";
+        return 0;
+}
+
+
+
+> > > Example 2
+
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> cat hello.cpp 
+#include <iostream>
+using std::cout;
+
+int main()
+{
+        return 0;
+}
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> ls
+
+
+    Directory: C:\Users\Tenebris\OneDrive\ECE330\Lab1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         3/5/2021     23:06            116 hello.cpp
+-a----         3/5/2021     23:07          45496 hello.exe
+-a----         3/5/2021     23:09            291 myclass.cpp
+-a----         3/5/2021     23:13          46330 myclass.exe
+-a----         3/5/2021     23:12            774 output.txt
+
+
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> ./myclass.exe 
+Foo
+Foo const
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> cat myclass.cpp
+#include <iostream>
+
+class MyClass {
+        private:
+                int counter;
+        public:
+                void Foo() {
+                        std::cout << "Foo" << std::endl;
+                }
+                void Foo() const {
+                        std::cout << "Foo const" << std::endl;
+                }
+};
+
+int main() {
+        MyClass cc;
+        const MyClass ccc = cc;
+        cc.Foo();
+        ccc.Foo();
+}
+
+
+
+> > > Example 2 Part 1
+
+PS C:\Users\Tenebris\OneDrive\ECE330\Lab1> ./myclass.exe
+Foo
+Foo
+
+Since ccc isn't a constant, the constant output was not print.
+
+
+
+> > > Example 2 Part 2

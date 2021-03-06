@@ -14,7 +14,7 @@ class MyClass {
 
 int main() {
 	MyClass cc;
-	const MyClass ccc = cc;
+	MyClass ccc;
 	cc.Foo();
 	ccc.Foo();
 }
