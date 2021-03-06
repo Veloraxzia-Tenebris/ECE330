@@ -1,0 +1,37 @@
+[Running] cd "c:\Users\Tenebris\OneDrive\ECE330\HW4\" && g++ test.cpp -o test && "c:\Users\Tenebris\OneDrive\ECE330\HW4\"test
+
+> > > Full-time salary: 
+Employee ID Number: 1
+Name: Jones, Booker T.
+Dept Code: 22
+Fraction of Time Worked: 1.00
+Monthly Salary: $100.00
+Salary: $100.00
+
+> > > Half-time salary: 
+Employee ID Number: 2
+Name: Hendrix, Jimi NMI.
+Dept Code: 14
+Fraction of Time Worked: 0.50
+Monthly Salary: $100.00
+Salary: $50.00
+
+> > > Hourly worker no overtime: 
+Employee ID Number: 3
+Name: Morrison, Jim D.
+Dept Code: 3
+Normal Hours Worked: 10.00
+Hourly Rate: $20.00
+Overtime Hours: 0.00
+Total Salary: $200.00
+
+> > > Hourly worker overtime: 
+Employee ID Number: 4
+Name: Iwork, Overtime XYZ.
+Dept Code: 42
+Normal Hours Worked: 10.00
+Hourly Rate: $20.00
+Overtime Hours: 5.00
+Total Salary: $350.00
+
+[Done] exited with code=0 in 0.59 seconds
