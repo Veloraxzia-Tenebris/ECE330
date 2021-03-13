@@ -39,6 +39,8 @@ int main() {
 	selectionSort<int>(array1, arraySize);
 	selectionSort<float>(array2, arraySize);
 
+	cout << endl;
+
 	cout << "Sorted data: " << setw(4) << endl;
 	cout << "Int array: " << endl;
 	printarray<int>(array1, arraySize);
