@@ -24,11 +24,11 @@ template <typename T> void printarray(T* const array, int const size) {
 		cout << array[i];
 }
 
-main() {
+int main() {
 	const int arraySize = 10;
 	int array1[arraySize] = {84, 56, 50, 33, 44, 53, 62, 30, 92, 94};
 	float array2[arraySize] = {68.99, 52.95, 71.96, 68.98, 48.39, 87.85, 49.58, 76.77, 80.26, 34.6};
-	
+
 	cout << "Original data: " << setw(4) << endl;
 	cout << "Int array: " << endl;
 	printarray<int>(array1, arraySize);
@@ -43,4 +43,5 @@ main() {
 	printarray<int>(array1, arraySize);
 	cout << "Float array: " << endl;
 	printarray<float>(array2, arraySize);
+	return 0;
 }
