@@ -1,0 +1,46 @@
+[Payroll Clerk]-(Pay Employee)
+(Pay Employee)<(Enter Hours)
+[Project Employee]-(Enter Timecard)
+[Project Employee]-(Pay Employee)
+[Accounting Employee]-(Enter Timecard)
+[Accounting Employee]-(Enter Hours)
+(Enter Hours)<(Adjust Remaining Budget)
+(Adjust Remaining Budget)<(Notify Manager)
+[Project Manager]-(Notify Manager)
+[Project Manager]-(Allocate Funds)
+(Allocate Funds)<(Adjust Remaining Budget)
+
+(start)-|a|
+|a|->(Allocate Project Funds)->|b|
+|a|->(Set Project Employees)->|b|
+|b|->(end)
+
+(start)-|a|
+|a|->(Employee Enters Timecard)->(Accountant Enters Hours)->(Adjust Budget)->|b|
+|b|->(end)
+
+(start)-|a|
+|a|->(Check Budget)-><b>[No Funding Left]->(Adjust Budget)->|c|,<b>[Has Funding Left]->|c|
+|c|->(end)
+
+(start)-|a|
+|a|->(Adjust Budget)-><b>[Weekly]->(Pay Hourly Employees)->|c|,<b>[Monthy]->(Pay Salaried Employees)->|c|
+|c|->(end)
+
+[Employee]^-[Project Member]
+[Project Member]^-[SalariedEmployee]
+[Project Member]^-[HourlyEmployee]
+[Project Member]^-[Manager]
+[Employee]^-[Payroll Clerk]
+[Payroll Clerk]-.->[Project Member]
+[Project Member]^-[Accountant]
+[Manager]-.->[Payroll Clerk]
+[Accountant]-.->[Payroll Clerk]
+[Manager]-[Accountant]
+[Employee|-firstName: string;-lastName: string;-id: int]
+[Project Member|-hours: float|+paymentAmount(): float;+enterTimecard(timecard: Timecard): bool]
+[SalariedEmployee|-salary: float|+paymentAmount(): float]
+[HourlyEmployee|-rate: float|+paymentAmount(): float]
+[Payroll Clerk|+pay(employeeID: int): bool]
+[Accountant|+enterHours(hours: float): bool;+adjustFunding(amount: float): bool]
+[Manager|+adjustFunding(amount: float): bool]
