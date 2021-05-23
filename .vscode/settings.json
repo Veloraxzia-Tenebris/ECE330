@@ -38,5 +38,17 @@
 		"xtr1common": "cpp",
 		"xutility": "cpp",
 		"iomanip": "cpp"
-	}
+	},
+	"python.pythonPath": "C:\\Program Files\\Python39\\python.exe",
+	"python.linting.pylintEnabled": true,
+	"python.linting.enabled": true,
+	"python.linting.flake8Enabled": false,
+	"python.linting.pycodestyleEnabled": false,
+	"python.linting.mypyEnabled": false,
+	"python.testing.pytestArgs": [
+		"PythonAssignment3"
+	],
+	"python.testing.unittestEnabled": false,
+	"python.testing.nosetestsEnabled": false,
+	"python.testing.pytestEnabled": true
 }
