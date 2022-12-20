@@ -1,2 +1,2 @@
 # ECE330
-UNM ECE330 Homework for Spring 2021
+UNM ECE330 Coursework for Spring 2021
